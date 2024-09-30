@@ -1,0 +1,6 @@
+# Swap files
+*.swp
+*.kate-swp
+
+# Directory settings
+.directory
