@@ -12,7 +12,7 @@ tools:
     args:
       - name: command
         description: >
-          "The GCP (`gcloud`) CLI command to run (example: account).
+          "The GCP (`gcloud`) CLI command to run (example: account)."
         required: true
     secrets:
       - SERVICE_ACCT_KEY
