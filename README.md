@@ -9,6 +9,13 @@ by Kubiya Teammates to access GCP using CLI commands.
 
 To use this tool:
 - Create a new service account with the required permissions as needed on the Google Cloud Console.
+- Create a service account key and download it.
+- Convert the service account key from JSON to Base 64 encoding using the following command (or
+similar):
+
+    base64 key.json > key.encoded
+
+- Upload the encoded key as a secret called `SERVICE_ACCT_KEY` on the Kubiya Web App.
 
 ## Uploading the tool as a new Source
 
