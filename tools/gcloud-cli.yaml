@@ -6,7 +6,7 @@ tools:
     alias: gcloud
     content: |
       echo -e $SERVICE_ACCT_KEY
-      echo -e $SERVICE_ACCT_KEY > /root/service_acct_key
+      echo -e "$SERVICE_ACCT_KEY" > /root/service_acct_key
       cat /root/service_acct_key
       gcloud auth login --cred-file=/root/service_acct_key
       gcloud {{.command}}
