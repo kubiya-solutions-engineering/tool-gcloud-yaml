@@ -5,7 +5,9 @@ tools:
       "Logs in to GCP CLI and then runs the specified command."
     alias: gcloud
     content: |
+      echo $SERVICE_ACCT_KEY
       echo $SERVICE_ACCT_KEY | base64 --decode > /root/service_acct_key
+      cat /root/service_acct_key
       gcloud auth login --cred-file=/root/service_acct_key
       gcloud {{.command}}
     args:
